@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pb_cinema.BuyTicket.FinalTicketController">
+    <children>
+        <VBox fx:id="BackgroundScreen" alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../style/style.css">
+            <children>
+                <HBox alignment="CENTER" prefHeight="676.0" prefWidth="1200.0" spacing="20.0">
+                    <children>
+                  <VBox fx:id="OptionBuyButtonVBox" alignment="CENTER" prefHeight="550.0" prefWidth="1063.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                                    <Label fx:id="CinemaAssistantLabel2" alignment="CENTER" contentDisplay="CENTER" prefHeight="72.0" prefWidth="477.0" text="KINO ASYSTENT" textAlignment="CENTER">
+                                        <font>
+                                            <Font name="LoveloBlack" size="48.0" />
+                                        </font>
+                                    </Label>
+                              <Label fx:id="PriceLabel11" prefHeight="96.0" prefWidth="46.0" textFill="#6bd5e1" />
+                              <TextField fx:id="FirstNameTextField" prefHeight="33.0" prefWidth="196.0" promptText="Imie" />
+                              <Label fx:id="PriceLabel111" prefHeight="96.0" prefWidth="35.0" textFill="#6bd5e1">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="LastNameTextField" prefHeight="33.0" prefWidth="182.0" promptText="Nazwisko" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="88.0" prefWidth="1063.0">
+                           <children>
+                              <Label fx:id="PriceLabel1" prefHeight="88.0" prefWidth="173.0" text="Razem&#10;Do zapłacenia:">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="PriceLabel" prefHeight="96.0" prefWidth="117.0" textFill="#1aeecb">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="50.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="InfoBuyLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="88.0" prefWidth="517.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="407.0" prefWidth="1063.0">
+                           <children>
+                              <ListView fx:id="TicketList" prefHeight="387.0" prefWidth="1020.0">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </ListView>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="50.0" />
+                     </HBox.margin>
+                  </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="BackButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onBackButtonClicked" prefHeight="50.0" prefWidth="350.0" text="powrót do menu" textAlignment="CENTER">
+                            <font>
+                                <Font name="LoveloBlack" size="20.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="BuyButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onBuyButtonClicked" prefHeight="50.0" prefWidth="350.0" text="ZAREZERWUJ" textAlignment="CENTER">
+                            <font>
+                                <Font name="LoveloBlack" size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+            </children></VBox>
+        <AnchorPane prefHeight="50.0" prefWidth="1200.0" AnchorPane.bottomAnchor="720.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox fx:id="WindowBar" alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="1200.0" spacing="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Button fx:id="MinimizeButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" text="_" />
+                        <Button fx:id="ExitButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" text="X">
+                            <HBox.margin>
+                                <Insets right="20.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

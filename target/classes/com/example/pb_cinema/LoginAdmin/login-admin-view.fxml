@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pb_cinema.LoginAdmin.LoginController">
+    <children>
+        <VBox fx:id="BackgroundScreen" alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="15.0" stylesheets="@../style/style.css">
+            <children>
+                <Label fx:id="CinemaAssistantLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="300.0" prefWidth="650.0" text="KINO&#10;ASYSTENT" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <font>
+                        <Font name="LoveloBlack" size="48.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="LoginAdminTextField" prefHeight="50.0" prefWidth="400.0" promptText="Login">
+               <VBox.margin>
+                  <Insets left="400.0" right="400.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="PasswordAdminTextField" prefHeight="50.0" prefWidth="400.0" promptText="Hasło">
+               <VBox.margin>
+                  <Insets left="400.0" right="400.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label fx:id="LoginLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="388.0" text="gdsd" />
+                <Button fx:id="LoginButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onLoginButtonClicked" prefHeight="50.0" prefWidth="350.0" text="zaloguj się" textAlignment="CENTER">
+                    <font>
+                        <Font name="LoveloBlack" size="20.0" />
+                    </font>
+                </Button>
+            <Button fx:id="BackButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onBackButtonClicked" prefHeight="50.0" prefWidth="350.0" text="wróć" textAlignment="CENTER">
+               <font>
+                  <Font name="LoveloBlack" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            </children></VBox>
+        <AnchorPane prefHeight="50.0" prefWidth="465.0" AnchorPane.bottomAnchor="720.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox fx:id="WindowBar" alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="1200.0" spacing="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Button fx:id="MinimizeButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" text="_" />
+                        <Button fx:id="ExitButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" text="X">
+                            <HBox.margin>
+                                <Insets right="20.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="781befa3-f7fc-47b1-bf78-c86aad9b2f93" name="PB_CINEMA" url="jdbc:postgresql://localhost/PB_CINEMA" driverClass="org.postgresql.Driver" />
+    </data-sources>
+  </component>
+</project>

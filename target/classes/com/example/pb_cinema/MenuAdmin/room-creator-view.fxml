@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<AnchorPane stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.pb_cinema.MenuAdmin.RoomCreatorController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <VBox fx:id="BackgroundScreen"  alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="30.0" stylesheets="@../style/style.css">
+            <children>
+                <Label fx:id="CinemaAssistantLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="300.0" prefWidth="800.0" text="Cinema&#10;Assistant" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <font>
+                        <Font name="LoveloBlack" size="48.0" />
+                    </font>
+                </Label>
+                <Button fx:id="CheckRepertuarButton" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="350.0" text="SPRAWDŹ REPERTUAR" textAlignment="CENTER">
+                    <font>
+                        <Font name="LoveloBlack" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="KupBiletButton" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="350.0" text="KUP BILET" textAlignment="CENTER">
+                    <font>
+                        <Font name="LoveloBlack" size="20.0" />
+                    </font>
+                </Button>
+            </children></VBox>
+        <HBox alignment="CENTER" fillHeight="false" prefHeight="90.0" prefWidth="465.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="800.0" AnchorPane.topAnchor="700.0">
+            <children>
+                <Button fx:id="AdminButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="335.0" text="Panel Administracji" textAlignment="CENTER" />
+            </children>
+        </HBox>
+        <AnchorPane prefHeight="50.0" prefWidth="465.0" AnchorPane.bottomAnchor="720.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox fx:id="WindowBar" alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="1200.0" spacing="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Button fx:id="MinimizeButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" text="_" />
+                        <Button fx:id="ExitButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" text="X">
+                            <HBox.margin>
+                                <Insets right="20.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
